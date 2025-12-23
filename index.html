@@ -65,17 +65,17 @@
     <!-- Text -->
     <div data-aos="fade-right">
       <p class="text-primary mb-2">Hola.</p>
-      <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+      <h1 class="text-xl  md:text-5xl font-bold mb-6 leading-tight">
         Soy Adrian <br>
         <span class="text-primary">Software Developer</span>
       </h1>
 
       <div class="flex gap-4 mb-10">
-        <a class="px-6 py-3 bg-primary text-dark rounded
+        <a href="#contact" class="md:px-6 px-2 md:py-3 py-1  bg-primary text-dark rounded
                   hover:-translate-y-1 hover:opacity-90 transition-all duration-300">
           Tienes un proyecto?
         </a>
-        <a class="px-6 py-3 border border-white/20 rounded
+        <a href="#projects" class="md:px-6 px-2 md:py-3 py-1 border border-white/20 rounded
                   hover:border-primary hover:-translate-y-1 transition-all duration-300">
           Mi trabajo
         </a>
@@ -104,7 +104,7 @@
     <!-- Image -->
     <div class="relative flex justify-center" data-aos="fade-left">
       <div class="absolute w-72 h-72 rounded-full border-[14px] border-primary opacity-40"></div>
-      <img src="src/images/pr.png"
+      <img src="images/pr.png"
            class="relative w-64 rounded-xl shadow-xl">
     </div>
 
@@ -112,7 +112,7 @@
 </section>
 
 <!-- ================= SERVICES + ABOUT ================= -->
-<section id="about" class="py-24 bg-gradient-to-b from-dark to-black">
+<section id="about" class=" py-12 md:py-24 bg-gradient-to-b from-dark to-black">
   <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
 
     <!-- Services -->
@@ -149,10 +149,7 @@
       </p>
 
       <div class="grid grid-cols-3 gap-6">
-        <div data-aos="zoom-in">
-          <p class="text-2xl font-bold text-primary">120+</p>
-          <p class="text-sm text-gray-400">Completed projects</p>
-        </div>
+
         <div data-aos="zoom-in" data-aos-delay="100">
           <p class="text-2xl font-bold text-primary">95%</p>
           <p class="text-sm text-gray-400">Client satisfaction</p>
@@ -168,7 +165,7 @@
 </section>
 
 <!-- ================= PROJECTS ================= -->
-<section id="projects" class="py-24 bg-gradient-to-t from-dark to-black">
+<section id="projects" class="md:py-24 py-12 bg-gradient-to-t from-dark to-black">
   <div class="max-w-7xl mx-auto px-6">
     <h2 class="text-3xl font-semibold mb-16 text-center" data-aos="fade-up">Proyectos</h2>
 
@@ -178,7 +175,7 @@
            data-aos="fade-up">
         <div>
           <h3 class="text-xl font-medium mb-4">Simulador de credito por tu automovil</h3>
-          <div class="flex gap-2 mb-4 text-xs text-gray-400">
+          <div class="flex flex-wrap gap-2 mb-4 text-xs text-gray-400">
             <span class="border px-2 py-1 rounded">HTML</span>
             <span class="border px-2 py-1 rounded">CSS</span>
             <span class="border px-2 py-1 rounded">Javascript</span>
@@ -201,7 +198,7 @@
         <div class="bg-card p-6 rounded-xl font-mono text-sm text-green-400
                     hover:-translate-y-2 transition"
              data-aos="fade-left">
-          <img class="h-[350px] w-full object-cover" src="src/images/SpinGo_Simulador.png" alt="SpinGo_Simulador">
+          <img class="md:h-[350px] h-[250px] w-full object-cover rounded hover:scale-105" src="images/SpinGo_Simulador.png" alt="SpinGo_Simulador">
         </div>
       </div>
 
@@ -215,7 +212,7 @@
           <h3 class="text-xl font-medium mb-4">
             Finverr Seguros
             </h3>
-          <div class="flex gap-2 mb-4 text-xs text-gray-400">
+          <div class="flex flex-wrap gap-2 mb-4 text-xs text-gray-400">
             <span class="border px-2 py-1 rounded">Laravel</span>
             <span class="border px-2 py-1 rounded">PHP</span>
             <span class="border px-2 py-1 rounded">MySQL</span>
@@ -241,8 +238,67 @@
         <div class="bg-card p-6 rounded-xl font-mono text-sm text-green-400
                     hover:-translate-y-2 transition"
              data-aos="fade-right">
-          <img class="h-[350px] w-full object-cover" src="src/images/FinverrSeguros.png" alt="FinverrSeguros">
+          <img class="md:h-[350px] h-[250px] w-full object-cover rounded" src="images/FinverrSeguros.png" alt="FinverrSeguros">
         </div>
+      </div>
+
+    </div>
+
+    <div class="space-y-20 pt-10 md:pt-0">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+           data-aos="fade-up">
+        <div class="">
+          <h3 class="text-xl font-medium mb-4">
+            Kiosco INEGI
+            </h3>
+          <div class="flex flex-wrap gap-2 mb-4 text-xs text-gray-400">
+            <span class="border px-2 py-1 rounded">Android 14</span>
+            <span class="border px-2 py-1 rounded">Java</span>
+            <span class="border px-2 py-1 rounded">XML</span>
+            <span class="border px-2 py-1 rounded">Retrofit</span>
+            <span class="border px-2 py-1 rounded">Sqlite</span>
+            <span class="border px-2 py-1 rounded">Maven</span>
+            <span class="border px-2 py-1 rounded">MVVM</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Aplicación móvil para la gestión del dispositivo y brindar una interfaz para la recolección de datos censales en campo. 
+          </p>
+          <div class="flex gap-4">
+<!--             <a class="px-4 py-2 bg-primary text-dark rounded text-sm
+                      hover:-translate-y-1 transition">
+              View Github
+            </a> -->
+            <a class="px-4 py-2 border rounded text-sm hover:border-primary transition" hreflang="es" href="https://finverrseguros.com/" target="_blank">
+              View project ↗
+            </a>
+          </div>
+        </div>
+
+      <div
+        class="relative bg-card flex items-center justify-center gap-6 p-8 rounded-2xl
+              shadow-xl hover:shadow-2xl transition-all duration-500
+              hover:-translate-y-2"
+        data-aos="fade-right"
+      >
+        <!-- Imagen principal -->
+        <img
+          class="md:h-[360px] h-[260px] w-auto object-contain rounded-xl
+                shadow-lg z-20"
+          src="images/kiosco_login.png"
+          alt="Finverr Seguros"
+        >
+
+        <!-- Imagen secundaria (fondo / efecto mockup) -->
+        <img
+          class="md:h-[340px] h-[240px] w-auto object-contain rounded-xl
+                absolute right-20 top-12 rotate-[25deg] opacity-70
+                shadow-md blur-[0.3px]"
+          src="images/kiosco_patron.png"
+          alt="Finverr Seguros"
+        >
+      </div>
+
       </div>
 
     </div>
@@ -251,11 +307,11 @@
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="py-24  bg-gradient-to-b from-dark to-black" data-aos="fade-up">
+<section id="contact" class="md:py-24 py-12 bg-gradient-to-b from-dark to-black" data-aos="fade-up">
   <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
 
     <div>
-      <h2 class="text-3xl font-semibold mb-6">
+      <h2 class="text-xl md:text-3xl font-semibold mb-6">
         ¿Tienes un proyecto?<br>¡Hablemos!
       </h2>
       <p class="text-gray-400 mb-6">
