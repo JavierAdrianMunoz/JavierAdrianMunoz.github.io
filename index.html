@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Javier Adrian | Software Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#a6e1fa',
+            dark: '#0f1b24',
+            card: '#13222e'
+          }
+        }
+      }
+    }
+  </script>
+    <!-- GOOGLE font Montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+    body {     font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal; }
+                
+  </style>
+</head>
+
+<body class="bg-dark text-white overflow-x-hidden">
+
+<!-- ================= HEADER ================= -->
+<header class="fixed w-full top-0 z-50 bg-dark/80 backdrop-blur border-b border-white/10"
+        data-aos="fade-down">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <span class="font-semibold text-lg">Javier Adrian</span>
+    <ul class="hidden md:flex gap-8 text-sm text-gray-400">
+      <a  href="#home" class="hover:text-white cursor-pointer">Home</a>
+      <a  href="#about" class="hover:text-white cursor-pointer">About</a>
+      <a  href="#projects" class="hover:text-white cursor-pointer">Projects</a>
+      <a  href="#contact" class="hover:text-white cursor-pointer">Contact</a>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="pt-32 pb-24">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+    <!-- Text -->
+    <div data-aos="fade-right">
+      <p class="text-primary mb-2">Hola.</p>
+      <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+        Soy Adrian <br>
+        <span class="text-primary">Software Developer</span>
+      </h1>
+
+      <div class="flex gap-4 mb-10">
+        <a class="px-6 py-3 bg-primary text-dark rounded
+                  hover:-translate-y-1 hover:opacity-90 transition-all duration-300">
+          Tienes un proyecto?
+        </a>
+        <a class="px-6 py-3 border border-white/20 rounded
+                  hover:border-primary hover:-translate-y-1 transition-all duration-300">
+          Mi trabajo
+        </a>
+      </div>
+
+      <div class="flex flex-wrap gap-6 text-sm text-gray-400">
+        <span>HTML5</span>
+        <span>CSS</span>
+        <span>Javascript</span>
+        <span>Node.js</span>
+        <span>React</span>
+        <span>Git</span>
+        <span>Github</span>
+        <span>Bootstrap</span>
+        <span>Tailwind CSS</span>
+        <span>Laravel</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>Python</span>
+        <span>Java</span>
+        <span>Kotlin</span>
+        <span>Android</span>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="relative flex justify-center" data-aos="fade-left">
+      <div class="absolute w-72 h-72 rounded-full border-[14px] border-primary opacity-40"></div>
+      <img src="src/images/pr.png"
+           class="relative w-64 rounded-xl shadow-xl">
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SERVICES + ABOUT ================= -->
+<section id="about" class="py-24 bg-gradient-to-b from-dark to-black">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+    <!-- Services -->
+    <div class="space-y-8">
+      <div class="flex gap-4" data-aos="fade-up">
+        <span class="text-primary">▸</span>
+        <div>
+          <h3 class="font-medium">Website Development</h3>
+          <p class="text-sm text-gray-400">Websites modernos y optimizados</p>
+        </div>
+      </div>
+      <div class="flex gap-4" data-aos="fade-up" data-aos-delay="100">
+        <span class="text-primary">▸</span>
+        <div>
+          <h3 class="font-medium">App Development</h3>
+          <p class="text-sm text-gray-400">Aplicaciones escalables</p>
+        </div>
+      </div>
+      <div class="flex gap-4" data-aos="fade-up" data-aos-delay="200">
+        <span class="text-primary">▸</span>
+        <div>
+          <h3 class="font-medium">Website Hosting</h3>
+          <p class="text-sm text-gray-400">Deploy y mantenimiento</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div data-aos="fade-left">
+      <h2 class="text-3xl font-semibold mb-6">About me</h2>
+      <p class="text-gray-400 mb-10">
+        Software developer enfocado en crear soluciones digitales desde cero,
+        cuidando UX, arquitectura y calidad del código.
+      </p>
+
+      <div class="grid grid-cols-3 gap-6">
+        <div data-aos="zoom-in">
+          <p class="text-2xl font-bold text-primary">120+</p>
+          <p class="text-sm text-gray-400">Completed projects</p>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="100">
+          <p class="text-2xl font-bold text-primary">95%</p>
+          <p class="text-sm text-gray-400">Client satisfaction</p>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="200">
+          <p class="text-2xl font-bold text-primary">10+</p>
+          <p class="text-sm text-gray-400">Years experience</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="py-24 bg-gradient-to-t from-dark to-black">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-semibold mb-16 text-center" data-aos="fade-up">Proyectos</h2>
+
+    <div class="space-y-20">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+           data-aos="fade-up">
+        <div>
+          <h3 class="text-xl font-medium mb-4">Simulador de credito por tu automovil</h3>
+          <div class="flex gap-2 mb-4 text-xs text-gray-400">
+            <span class="border px-2 py-1 rounded">HTML</span>
+            <span class="border px-2 py-1 rounded">CSS</span>
+            <span class="border px-2 py-1 rounded">Javascript</span>
+            <span class="border px-2 py-1 rounded">Node.js</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Simulador de credito por tu automovil, hecho con HTML, CSS y Javascript, conectado a un API.
+          </p>
+          <div class="flex gap-4">
+<!--             <a class="px-4 py-2 bg-primary text-dark rounded text-sm
+                      hover:-translate-y-1 transition">
+              View Github
+            </a> -->
+            <a class="px-4 py-2 border rounded text-sm hover:border-primary transition" hreflang="es" href="https://spingo.mx/simulador/" target="_blank">
+              View project ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-card p-6 rounded-xl font-mono text-sm text-green-400
+                    hover:-translate-y-2 transition"
+             data-aos="fade-left">
+          <img class="h-[350px] w-full object-cover" src="src/images/SpinGo_Simulador.png" alt="SpinGo_Simulador">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="space-y-20 pt-10 md:pt-0">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+           data-aos="fade-up">
+        <div class="md:order-2">
+          <h3 class="text-xl font-medium mb-4">
+            Finverr Seguros
+            </h3>
+          <div class="flex gap-2 mb-4 text-xs text-gray-400">
+            <span class="border px-2 py-1 rounded">Laravel</span>
+            <span class="border px-2 py-1 rounded">PHP</span>
+            <span class="border px-2 py-1 rounded">MySQL</span>
+            <span class="border px-2 py-1 rounded">HTML</span>
+            <span class="border px-2 py-1 rounded">CSS</span>
+            <span class="border px-2 py-1 rounded">Javascript</span>
+            <span class="border px-2 py-1 rounded">Node.js</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Pagina web de Finverr Seguros, hecha con HTML, Tailwind CSS, Laravel.
+          </p>
+          <div class="flex gap-4">
+<!--             <a class="px-4 py-2 bg-primary text-dark rounded text-sm
+                      hover:-translate-y-1 transition">
+              View Github
+            </a> -->
+            <a class="px-4 py-2 border rounded text-sm hover:border-primary transition" hreflang="es" href="https://finverrseguros.com/" target="_blank">
+              View project ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-card p-6 rounded-xl font-mono text-sm text-green-400
+                    hover:-translate-y-2 transition"
+             data-aos="fade-right">
+          <img class="h-[350px] w-full object-cover" src="src/images/FinverrSeguros.png" alt="FinverrSeguros">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-24  bg-gradient-to-b from-dark to-black" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+    <div>
+      <h2 class="text-3xl font-semibold mb-6">
+        ¿Tienes un proyecto?<br>¡Hablemos!
+      </h2>
+      <p class="text-gray-400 mb-6">
+        Si tienes una idea genial y deseas trabajar conmigo, no dudes en
+        contactarme. 
+    </div>
+
+
+<form id="contactForm" class="space-y-6">
+  <input
+    type="text"
+    name="name"
+    required
+    class="w-full bg-transparent border-b border-white/20 py-2 outline-none"
+    placeholder="Nombre"
+  >
+
+  <input
+    type="email"
+    name="email"
+    required
+    class="w-full bg-transparent border-b border-white/20 py-2 outline-none"
+    placeholder="Correo electrónico"
+  >
+
+  <textarea
+    name="message"
+    required
+    class="w-full bg-transparent border-b border-white/20 py-2 outline-none"
+    placeholder="Mensaje"
+  ></textarea>
+
+  <button
+    type="submit"
+    class="border border-white/40 px-6 py-2 hover:bg-white hover:text-black transition"
+  >
+    Enviar mensaje
+  </button>
+
+  <p id="formStatus" class="text-sm mt-2"></p>
+</form>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-10 bg-black text-center text-xl text-gray-500">
+  © Javier Adrian — Designed with love.
+</footer>
+
+<!-- ================= AOS INIT ================= -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,
+    easing: 'ease-out-cubic',
+    once: true
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("yWNalbN7k19PapzgR");
+  })();
+</script>
+<script>
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    status.textContent = 'Enviando...';
+
+    emailjs.sendForm(
+      'default_service',
+      'template_5pzdeo9',
+      this
+    )
+    .then(
+    (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        status.textContent = 'Mensaje enviado, en breve me pondré en contacto contigo.';
+        form.reset();
+    },
+    (error) => {
+        console.log('FAILED...', error);
+        status.textContent = 'Lo siento, ha ocurrido un error., por favor intenta de nuevo. o bien contactarme directamente a mi correo. javieradrianmunozmolina@gmail.com';
+    },
+    );
+  });
+</script>
+
+</body>
+</html>
